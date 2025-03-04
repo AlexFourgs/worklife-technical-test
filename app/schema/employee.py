@@ -1,3 +1,6 @@
+from uuid import UUID
+from typing import Optional
+
 from pydantic import BaseModel, ConfigDict
 
 
@@ -6,3 +9,4 @@ class EmployeeBase(BaseModel):
 
     first_name: str
     last_name: str
+    team_id: Optional[UUID]
